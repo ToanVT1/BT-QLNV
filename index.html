@@ -1,0 +1,128 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 mx-auto">
+                <h3 class="display-4 text-center">Quản Lý nhân viên</h3>
+                <form id="formQLSV">
+                    <div class="row">
+                        <div class="col-12 form-group">
+                            <label for="">Mã Nhân Viên : </label>
+                            <input type="text" class="form-control" id="txtMaNV">
+                            <span id="spanMaNV" class="text-danger"></span>
+                        </div>
+                        <div class="col-12 form-group">
+                            <label for="">Tên Nhân Viên : </label>
+                            <input type="text" class="form-control" id="txtTenNV">
+                            <span id="spanTenNV" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                    </div>
+                    <div class="row">
+                        <div class="col-12 form-group">
+                            <label for="">Chức vụ: </label>
+                            <select name="" id="chucVu" class="form-control">
+                                <option value="-1">Chọn chức vụ</option>
+                                <option value="Nhân viên">Nhân viên</option>
+                                <option value="Quản lí">Quản lí</option>
+                                <option value="Giám đốc">Giám đốc</option>
+                            </select>
+                            <span id="spanchucVu" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 form-group">
+                            <label for="">Lương Cơ Bản</label>
+                            <input type="text" class="form-control" id="txtluongCoBan">
+                            <span id="spanluongCoBan" class="text-danger"></span>
+                        </div>
+                        <div class="col-12 form-group">
+                            <label for="">Số Giờ Làm Trong Tháng</label>
+                            <input type="text" class="form-control" id="txtsoGioLam">
+                            <span id="spansoGioLam" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group text-center">
+                        <button type="submit" onclick="" class="btn btn-success">Thêm Nhân Viên</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-10 mx-auto">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Mã NV</th>
+                            <th>Tên NV</th>                         
+                            <th>Chức vụ</th>
+                            <th>Lương CB</th>
+                            <th>Tổng Lương</th>
+                            <th>Giờ làm/Tháng</th>
+                            <th>Xếp loại NV</th>
+
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyNhanVien">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        
+                            <td>
+                                <!-- <button class="btn btn-warning">Sua</button> -->
+                                <button class="btn btn-danger">Xoa</button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        Toast
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <strong class="me-auto">Thong bao</strong>
+                <small>3 seconds</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body">
+              </div>
+            </div>
+          </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+          
+            <script type="module" src="./js/index.js"></script>
+
+       
+    </div>
+</body>
+
+</html>
